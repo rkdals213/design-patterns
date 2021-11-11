@@ -1,10 +1,20 @@
 package me.whiteship.designpatterns._01_creational_patterns._01_singleton;
 
-/**
- * Enum을 사용해서 싱글톤 만들기
- */
-public enum Settings5 {
+import java.io.Serializable;
 
-    INSTANCE;
+/**
+ * static inner 클래스 홀더
+ */
+public class Settings5 implements Serializable {
+
+    private Settings5() { }
+
+    private static class Settings5Holder {
+        private static final Settings5 INSTANCE = new Settings5();
+    }
+
+    public static Settings5 getInstance() {
+        return Settings5Holder.INSTANCE;
+    }
 
 }
