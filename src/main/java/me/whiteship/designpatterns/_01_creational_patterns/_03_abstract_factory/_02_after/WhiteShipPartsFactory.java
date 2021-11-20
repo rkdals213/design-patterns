@@ -3,7 +3,7 @@ package me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory
 import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteAnchor;
 import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteWheel;
 
-public class WhiteshipPartsFactory implements ShipPartsFactory {
+public class WhiteShipPartsFactory implements ShipPartsFactory {
 
     @Override
     public Anchor createAnchor() {
