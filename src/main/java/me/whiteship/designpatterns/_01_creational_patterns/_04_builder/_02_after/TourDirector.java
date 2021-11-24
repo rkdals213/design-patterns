@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class TourDirector {
 
-    private TourPlanBuilder tourPlanBuilder;
+    private final TourPlanBuilder tourPlanBuilder;
 
     public TourDirector(TourPlanBuilder tourPlanBuilder) {
         this.tourPlanBuilder = tourPlanBuilder;

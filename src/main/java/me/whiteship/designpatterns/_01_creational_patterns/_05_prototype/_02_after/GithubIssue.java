@@ -43,15 +43,7 @@ public class GithubIssue implements Cloneable {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        GithubRepository repository = new GithubRepository();
-        repository.setUser(this.repository.getUser());
-        repository.setName(this.repository.getName());
-
-        GithubIssue githubIssue = new GithubIssue(repository);
-        githubIssue.setId(this.id);
-        githubIssue.setTitle(this.title);
-
-        return githubIssue;
+        return super.clone();
     }
 
     @Override
