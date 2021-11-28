@@ -14,7 +14,6 @@ public class 정복자아리 implements Champion {
     @Override
     public void skillW() {
         System.out.println("정복자 아리 W");
-
     }
 
     @Override
