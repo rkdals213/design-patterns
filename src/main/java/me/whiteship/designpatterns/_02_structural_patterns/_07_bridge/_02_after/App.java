@@ -2,7 +2,7 @@ package me.whiteship.designpatterns._02_structural_patterns._07_bridge._02_after
 
 import me.whiteship.designpatterns._02_structural_patterns._07_bridge._01_before.Champion;
 
-public class App {
+public abstract class App implements Champion {
 
     public static void main(String[] args) {
         Champion kda아리 = new 아리(new KDA());
