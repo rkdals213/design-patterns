@@ -19,6 +19,4 @@ public class Client {
     private void printPrice(Component component) {
         System.out.println(component.getPrice());
     }
-
-
 }
