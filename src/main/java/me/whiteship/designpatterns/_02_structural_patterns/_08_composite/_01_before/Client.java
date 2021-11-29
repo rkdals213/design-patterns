@@ -1,7 +1,5 @@
 package me.whiteship.designpatterns._02_structural_patterns._08_composite._01_before;
 
-import java.util.stream.Collectors;
-
 public class Client {
 
     public static void main(String[] args) {
@@ -22,8 +20,10 @@ public class Client {
     }
 
     private void printPrice(Bag bag) {
-        int sum = bag.getItems().stream().mapToInt(Item::getPrice).sum();
+        int sum = bag.getItems()
+                .stream()
+                .mapToInt(Item::getPrice)
+                .sum();
         System.out.println(sum);
     }
-
 }
