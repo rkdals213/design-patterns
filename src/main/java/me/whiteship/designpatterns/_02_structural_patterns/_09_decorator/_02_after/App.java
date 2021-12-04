@@ -11,10 +11,12 @@ public class App {
 
         if (enabledSpamFilter) {
             commentService = new SpamFilteringCommentDecorator(commentService);
+            System.out.println(commentService.getClass());
         }
 
         if (enabledTrimming) {
             commentService = new TrimmingCommentDecorator(commentService);
+            System.out.println(commentService.getClass());
         }
 
         Client client = new Client(commentService);
