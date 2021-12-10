@@ -39,6 +39,4 @@ public class EmailSender {
             e.printStackTrace();
         }
     }
-
-
 }
