@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class FontFactory {
 
-    private Map<String, Font> cache = new HashMap<>();
+    private final Map<String, Font> cache = new HashMap<>();
 
     public Font getFont(String font) {
         if (cache.containsKey(font)) {
